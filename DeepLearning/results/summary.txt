@@ -1,0 +1,14 @@
+
+============================================================
+DEEP LEARNING SUMMARY
+============================================================
+
+MODEL: MyNet (6 -> 64 -> 32 -> 15)
+Features: ['Init Fwd Win Byts', 'Fwd Seg Size Min', 'Protocol', 'Fwd Header Len', 'Fwd Pkt Len Max', 'ACK Flag Cnt']
+Epochs: 50
+Accuracy: 0.8814
+F1 Score: 0.6663
+
+Comparison:
+- NN: Acc=0.881, F1=0.666
+- Ensemble: Acc=0.980, F1=0.980

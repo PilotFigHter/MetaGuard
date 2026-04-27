@@ -1,0 +1,106 @@
+🛡️ MASTER DATASET EVALUATION (Aggregated)
+============================================================
+
+📊 MODEL: RandomForest
+------------------------------
+                          precision    recall  f1-score   support
+
+                  Benign       0.99      0.72      0.83  13390249
+                     Bot       0.84      1.00      0.91    286191
+        Brute Force -Web       0.03      0.89      0.05       611
+        Brute Force -XSS       0.04      0.81      0.07       230
+        DDOS attack-HOIC       0.99      1.00      0.99    686012
+    DDOS attack-LOIC-UDP       0.76      0.96      0.85      1730
+  DDoS attacks-LOIC-HTTP       0.82      1.00      0.90    576191
+   DoS attacks-GoldenEye       0.99      1.00      1.00     41508
+        DoS attacks-Hulk       1.00      1.00      1.00    461912
+DoS attacks-SlowHTTPTest       0.55      0.96      0.70    139890
+   DoS attacks-Slowloris       0.39      0.99      0.56     10990
+          FTP-BruteForce       0.94      0.43      0.59    193354
+           Infilteration       0.03      0.64      0.05    160639
+           SQL Injection       0.02      0.55      0.03        87
+          SSH-Bruteforce       1.00      1.00      1.00    187589
+
+                accuracy                           0.75  16137183
+               macro avg       0.63      0.86      0.64  16137183
+            weighted avg       0.97      0.75      0.84  16137183
+
+🚨 Global False Alarm Rate: 28.37% (3,799,235 cases)
+
+📊 MODEL: XGBoost
+------------------------------
+                          precision    recall  f1-score   support
+
+                  Benign       0.99      1.00      0.99  13390249
+                     Bot       0.98      0.99      0.98    286191
+        Brute Force -Web       0.09      0.86      0.17       611
+        Brute Force -XSS       0.18      0.80      0.29       230
+        DDOS attack-HOIC       1.00      1.00      1.00    686012
+    DDOS attack-LOIC-UDP       0.76      0.94      0.84      1730
+  DDoS attacks-LOIC-HTTP       0.99      1.00      0.99    576191
+   DoS attacks-GoldenEye       0.99      1.00      1.00     41508
+        DoS attacks-Hulk       1.00      1.00      1.00    461912
+DoS attacks-SlowHTTPTest       0.77      0.51      0.62    139890
+   DoS attacks-Slowloris       0.99      0.79      0.88     10990
+          FTP-BruteForce       0.72      0.89      0.79    193354
+           Infilteration       0.50      0.02      0.04    160639
+           SQL Injection       0.02      0.62      0.04        87
+          SSH-Bruteforce       1.00      1.00      1.00    187589
+
+                accuracy                           0.98  16137183
+               macro avg       0.73      0.83      0.71  16137183
+            weighted avg       0.98      0.98      0.98  16137183
+
+🚨 Global False Alarm Rate: 0.16% (21,887 cases)
+
+📊 MODEL: LightGBM
+------------------------------
+                          precision    recall  f1-score   support
+
+                  Benign       0.98      0.97      0.98  13390249
+                     Bot       0.98      0.99      0.98    286191
+        Brute Force -Web       0.04      0.45      0.07       611
+        Brute Force -XSS       0.05      0.87      0.09       230
+        DDOS attack-HOIC       0.93      1.00      0.96    686012
+    DDOS attack-LOIC-UDP       0.00      0.00      0.00      1730
+  DDoS attacks-LOIC-HTTP       0.87      0.96      0.91    576191
+   DoS attacks-GoldenEye       0.06      0.06      0.06     41508
+        DoS attacks-Hulk       0.97      0.98      0.97    461912
+DoS attacks-SlowHTTPTest       0.69      0.14      0.23    139890
+   DoS attacks-Slowloris       0.01      0.05      0.02     10990
+          FTP-BruteForce       0.59      0.96      0.73    193354
+           Infilteration       0.12      0.03      0.04    160639
+           SQL Injection       0.00      0.24      0.00        87
+          SSH-Bruteforce       0.93      0.98      0.96    187589
+
+                accuracy                           0.96  16137183
+               macro avg       0.48      0.58      0.47  16137183
+            weighted avg       0.96      0.96      0.95  16137183
+
+🚨 Global False Alarm Rate: 2.50% (335,309 cases)
+
+📊 MODEL: Ensemble
+------------------------------
+                          precision    recall  f1-score   support
+
+                  Benign       0.99      1.00      0.99  13390249
+                     Bot       0.98      0.99      0.98    286191
+        Brute Force -Web       0.16      0.85      0.27       611
+        Brute Force -XSS       0.21      0.85      0.34       230
+        DDOS attack-HOIC       1.00      1.00      1.00    686012
+    DDOS attack-LOIC-UDP       0.77      0.93      0.85      1730
+  DDoS attacks-LOIC-HTTP       0.99      1.00      0.99    576191
+   DoS attacks-GoldenEye       1.00      1.00      1.00     41508
+        DoS attacks-Hulk       1.00      1.00      1.00    461912
+DoS attacks-SlowHTTPTest       0.77      0.51      0.61    139890
+   DoS attacks-Slowloris       0.98      0.98      0.98     10990
+          FTP-BruteForce       0.71      0.89      0.79    193354
+           Infilteration       0.44      0.15      0.22    160639
+           SQL Injection       0.03      0.63      0.06        87
+          SSH-Bruteforce       1.00      1.00      1.00    187589
+
+                accuracy                           0.98  16137183
+               macro avg       0.74      0.85      0.74  16137183
+            weighted avg       0.98      0.98      0.98  16137183
+
+🚨 Global False Alarm Rate: 0.35% (46,957 cases)

@@ -1,0 +1,3 @@
+1. Top Feature Reliance: Fwd Seg Size Min (0.52)
+2. Data Leakage Status: PASS
+3. Mutual Information Test: PASS (Max Score: 0.0390)

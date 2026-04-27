@@ -1,0 +1,82 @@
+------------------------------------------------------------
+⏳ TUNING & TRAINING: RandomForest
+------------------------------------------------------------
+
+✅ RandomForest Finished in 16.74m
+                          precision    recall  f1-score   support
+
+                  Benign       0.90      0.96      0.93    674229
+                     Bot       0.98      0.50      0.66     14309
+        Brute Force -Web       0.05      0.46      0.09        35
+        Brute Force -XSS       0.02      0.67      0.04        12
+        DDOS attack-HOIC       1.00      0.23      0.37     34284
+    DDOS attack-LOIC-UDP       0.82      0.86      0.84        85
+  DDoS attacks-LOIC-HTTP       1.00      0.50      0.67     28808
+   DoS attacks-GoldenEye       0.97      0.67      0.80      2045
+        DoS attacks-Hulk       0.97      1.00      0.98     23143
+DoS attacks-SlowHTTPTest       0.00      0.00      0.00      6998
+   DoS attacks-Slowloris       0.72      0.99      0.83       567
+          FTP-BruteForce       0.00      0.00      0.00      9647
+           Infilteration       0.17      0.26      0.20      8100
+           SQL Injection       0.00      0.00      0.00         5
+          SSH-Bruteforce       0.97      1.00      0.98      9380
+
+                accuracy                           0.88    811647
+               macro avg       0.57      0.54      0.49    811647
+            weighted avg       0.89      0.88      0.87    811647
+
+
+------------------------------------------------------------
+⏳ TUNING & TRAINING: XGBoost
+------------------------------------------------------------
+
+✅ XGBoost Finished in 11.25m
+                          precision    recall  f1-score   support
+
+                  Benign       0.90      1.00      0.95    674229
+                     Bot       0.87      0.50      0.63     14309
+        Brute Force -Web       0.33      0.37      0.35        35
+        Brute Force -XSS       0.64      0.58      0.61        12
+        DDOS attack-HOIC       0.98      0.20      0.34     34284
+    DDOS attack-LOIC-UDP       0.00      0.00      0.00        85
+  DDoS attacks-LOIC-HTTP       1.00      0.50      0.67     28808
+   DoS attacks-GoldenEye       0.98      0.66      0.79      2045
+        DoS attacks-Hulk       0.97      1.00      0.98     23143
+DoS attacks-SlowHTTPTest       0.00      0.00      0.00      6998
+   DoS attacks-Slowloris       1.00      0.75      0.86       567
+          FTP-BruteForce       0.00      0.00      0.00      9647
+           Infilteration       0.00      0.00      0.00      8100
+           SQL Injection       0.01      0.20      0.01         5
+          SSH-Bruteforce       0.97      1.00      0.98      9380
+
+                accuracy                           0.91    811647
+               macro avg       0.58      0.45      0.48    811647
+            weighted avg       0.88      0.91      0.88    811647
+
+
+------------------------------------------------------------
+⏳ TUNING & TRAINING: LightGBM
+------------------------------------------------------------
+
+✅ LightGBM Finished in 6.92m
+                          precision    recall  f1-score   support
+
+                  Benign       0.81      0.64      0.72    674229
+                     Bot       0.00      0.00      0.00     14309
+        Brute Force -Web       0.00      0.00      0.00        35
+        Brute Force -XSS       0.00      0.00      0.00        12
+        DDOS attack-HOIC       0.15      0.09      0.11     34284
+    DDOS attack-LOIC-UDP       0.00      0.00      0.00        85
+  DDoS attacks-LOIC-HTTP       0.00      0.00      0.00     28808
+   DoS attacks-GoldenEye       0.00      0.00      0.00      2045
+        DoS attacks-Hulk       0.01      0.04      0.02     23143
+DoS attacks-SlowHTTPTest       0.00      0.00      0.00      6998
+   DoS attacks-Slowloris       0.00      0.00      0.00       567
+          FTP-BruteForce       0.00      0.00      0.00      9647
+           Infilteration       0.01      0.01      0.01      8100
+           SQL Injection       0.00      0.00      0.00         5
+          SSH-Bruteforce       0.85      0.50      0.63      9380
+
+                accuracy                           0.54    811647
+               macro avg       0.12      0.09      0.10    811647
+            weighted avg       0.69      0.54      0.61    811647

@@ -1,0 +1,22 @@
+NEURAL NETWORK RESULTS
+Accuracy: 0.8814
+F1: 0.6663
+
+                          precision    recall  f1-score   support
+
+                  Benign       0.98      0.99      0.98     34197
+                     Bot       0.92      0.90      0.91      6321
+        Brute Force -Web       0.00      0.00      0.00       122
+        Brute Force -XSS       0.82      0.39      0.53        46
+        DDOS attack-HOIC       1.00      1.00      1.00      7213
+    DDOS attack-LOIC-UDP       1.00      1.00      1.00       346
+  DDoS attacks-LOIC-HTTP       1.00      1.00      1.00      7986
+   DoS attacks-GoldenEye       0.99      0.99      0.99      6533
+DoS attacks-SlowHTTPTest       0.50      1.00      0.66      7977
+   DoS attacks-Slowloris       0.97      0.88      0.92      1262
+          FTP-BruteForce       0.00      0.00      0.00      7979
+           SQL Injection       0.00      0.00      0.00        17
+
+                accuracy                           0.88     79999
+               macro avg       0.68      0.68      0.67     79999
+            weighted avg       0.83      0.88      0.85     79999

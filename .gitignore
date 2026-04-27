@@ -1,0 +1,27 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.env
+.venv
+venv/
+ENV/
+.idea/
+.vscode/
+*.log
+*.csv
+*.pth
+.DS_Store
+Thumbs.db
+
+# Data folder - contains large CSV files
+Data/
+
+# Deep Learning models (large binary files)
+DeepLearning/results/*.pth
