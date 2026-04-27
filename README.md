@@ -30,6 +30,7 @@ MetaGuard_New/
 - `realtime_label_encoder.pkl` - Label encoder
 - `nn_label_encoder.pkl` - NN label encoder
 - `nn_scaler.pkl` - NN scaler
+- **Only essential models kept to reduce file size**
 
 ### Training/
 - `train_models.py` - Train individual models (RF, XGB, LGBM)
